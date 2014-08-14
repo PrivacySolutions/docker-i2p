@@ -13,6 +13,9 @@ RUN echo "i2cp.tcp.bindAllInterfaces=true" >> /var/lib/i2p/i2p-config/router.con
 # Allows docker to NAT the port
 RUN sed -i s/::1,127.0.0.1/0.0.0.0/ /var/lib/i2p/i2p-config/clients.config
 
+# Allow persistent config
+VOLUME ["/var/lib/i2p/i2p-config"]
+
 EXPOSE 7657
 EXPOSE 4444
 EXPOSE 4445
