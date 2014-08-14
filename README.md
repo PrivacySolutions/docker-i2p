@@ -8,6 +8,15 @@ This script will install the current I2P version released when you build the doc
 How to install and run
 =======================
 
+Download from docker hub, or github
+
+```
+$ docker pull meeh/i2p # from docker
+$ git clone https://github.com/PrivacySolutions/docker-i2p.git # from github
+```
+
+Ignore the two first lines if you downloaded from docker and not github.
+
 ```
 # cd docker-i2p
 # docker build -t i2p .
